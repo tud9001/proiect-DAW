@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ho1R8yJZ+rTFc8yiVoE0VnBpo3BD/L5SdobMa7WZmP5Uu+nIPD5J7JJzg1lSHqLerozVwHljXpmalg5u4NlTYA==",
+  "dgSpecHash": "XuGsHr8RG2KeBNnAyfiyeLZbWjNl9dD5ciE/04P3XDAv71oSL2UeZ/RMVs0Bm+beoqVbFDjyzqiIrpGYKIJdJQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Tudor\\proiect DAW\\proiect DAW\\App\\App.csproj",
+  "projectFilePath": "C:\\Users\\Tudor\\proiect DAW\\proiect DAW\\app\\App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tudor\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.13\\microsoft.data.sqlite.core.5.0.13.nupkg.sha512",
     "C:\\Users\\Tudor\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\3.1.6\\microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",

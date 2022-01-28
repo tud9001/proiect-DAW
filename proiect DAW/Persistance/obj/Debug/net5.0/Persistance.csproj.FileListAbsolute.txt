@@ -9,7 +9,6 @@ C:\Users\Tudor\proiect DAW\proiect DAW\Persistance\obj\Debug\net5.0\Persistance.
 C:\Users\Tudor\proiect DAW\proiect DAW\Persistance\obj\Debug\net5.0\Persistance.AssemblyInfoInputs.cache
 C:\Users\Tudor\proiect DAW\proiect DAW\Persistance\obj\Debug\net5.0\Persistance.AssemblyInfo.cs
 C:\Users\Tudor\proiect DAW\proiect DAW\Persistance\obj\Debug\net5.0\Persistance.csproj.CoreCompileInputs.cache
-C:\Users\Tudor\proiect DAW\proiect DAW\Persistance\obj\Debug\net5.0\Persistance.csproj.CopyComplete
 C:\Users\Tudor\proiect DAW\proiect DAW\Persistance\obj\Debug\net5.0\Persistance.dll
 C:\Users\Tudor\proiect DAW\proiect DAW\Persistance\obj\Debug\net5.0\ref\Persistance.dll
 C:\Users\Tudor\proiect DAW\proiect DAW\Persistance\obj\Debug\net5.0\Persistance.pdb
