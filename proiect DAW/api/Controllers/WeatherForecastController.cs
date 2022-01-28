@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Domain;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Persistance;
 
 namespace api.Controllers
 {
@@ -16,15 +19,28 @@ namespace api.Controllers
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        private readonly ILogger<WeatherForecastController> _logger;
+        
+        private readonly DataContext _context;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(DataContext context)
         {
-            _logger = logger;
+            _context = context;
         }
 
+        
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public async Task<ActionResult<IEnumerable<value>>> Get()
+        {
+            var values = await _context.Values.ToListAsync();
+            return Ok(values);
+        }
+        [HttpGet("{id}")]
+        public async Task<ActionResult<value>> Get(int id)
+        {
+            var valoare = await _context.Values.FindAsync(id);
+            return Ok(valoare);
+        }
+        /*public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
@@ -34,6 +50,7 @@ namespace api.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
-        }
+        }*/
+        
     }
 }

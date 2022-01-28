@@ -11,7 +11,6 @@ C:\Users\Tudor\proiect DAW\proiect DAW\app\obj\Debug\net5.0\App.GeneratedMSBuild
 C:\Users\Tudor\proiect DAW\proiect DAW\app\obj\Debug\net5.0\App.AssemblyInfoInputs.cache
 C:\Users\Tudor\proiect DAW\proiect DAW\app\obj\Debug\net5.0\App.AssemblyInfo.cs
 C:\Users\Tudor\proiect DAW\proiect DAW\app\obj\Debug\net5.0\App.csproj.CoreCompileInputs.cache
-C:\Users\Tudor\proiect DAW\proiect DAW\app\obj\Debug\net5.0\App.csproj.CopyComplete
 C:\Users\Tudor\proiect DAW\proiect DAW\app\obj\Debug\net5.0\App.dll
 C:\Users\Tudor\proiect DAW\proiect DAW\app\obj\Debug\net5.0\ref\App.dll
 C:\Users\Tudor\proiect DAW\proiect DAW\app\obj\Debug\net5.0\App.pdb
