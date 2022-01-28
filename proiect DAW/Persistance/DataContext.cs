@@ -15,9 +15,9 @@ namespace Persistance
             .HasData(
                 new value {Id = 1, Name = "mare"},
                 
-                new value {Id = 1, Name = "schema"},
+                new value {Id = 2, Name = "schema"},
                 
-                new value {Id = 1, Name = "aicea"}
+                new value {Id = 3, Name = "aicea"}
             );
         }
         
