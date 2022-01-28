@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tudor\\proiect DAW\\proiect DAW\\Domain\\Domain.csproj": {}
+    "c:\\Users\\Tudor\\proiect DAW\\proiect DAW\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tudor\\proiect DAW\\proiect DAW\\Domain\\Domain.csproj": {
+    "c:\\Users\\Tudor\\proiect DAW\\proiect DAW\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tudor\\proiect DAW\\proiect DAW\\Domain\\Domain.csproj",
+        "projectUniqueName": "c:\\Users\\Tudor\\proiect DAW\\proiect DAW\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Tudor\\proiect DAW\\proiect DAW\\Domain\\Domain.csproj",
+        "projectPath": "c:\\Users\\Tudor\\proiect DAW\\proiect DAW\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Tudor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tudor\\proiect DAW\\proiect DAW\\Domain\\obj\\",
+        "outputPath": "c:\\Users\\Tudor\\proiect DAW\\proiect DAW\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tudor\\AppData\\Roaming\\NuGet\\NuGet.Config",
