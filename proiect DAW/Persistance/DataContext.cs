@@ -8,16 +8,16 @@ namespace Persistance
     {
         public DataContext(DbContextOptions options): base(options)
         {}
-        public DbSet<value> Values {get; set;}
+        public DbSet<user> Values {get; set;}
 
         protected override void OnModelCreating(ModelBuilder builder){
-            builder.Entity<value>()
+            builder.Entity<user>()
             .HasData(
-                new value {Id = 1, Name = "mare"},
+                new user {Id = 1, Name = "mare"},
                 
-                new value {Id = 2, Name = "schema"},
+                new user {Id = 2, Name = "schema"},
                 
-                new value {Id = 3, Name = "aicea"}
+                new user {Id = 3, Name = "aicea"}
             );
         }
         

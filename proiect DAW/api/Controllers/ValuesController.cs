@@ -12,7 +12,7 @@ namespace api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class ValuesController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
         {
@@ -22,7 +22,7 @@ namespace api.Controllers
         
         private readonly DataContext _context;
 
-        public WeatherForecastController(DataContext context)
+        public ValuesController(DataContext context)
         {
             _context = context;
         }
@@ -40,10 +40,10 @@ namespace api.Controllers
             var valoare = await _context.Values.FindAsync(id);
             return Ok(valoare);
         }
-        /*public IEnumerable<WeatherForecast> Get()
+        /*public IEnumerable<Values> Get()
         {
             var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            return Enumerable.Range(1, 5).Select(index => new Values
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = rng.Next(-20, 55),
