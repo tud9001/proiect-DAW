@@ -64,5 +64,4 @@ C:\Users\Tudor\proiect DAW\proiect DAW\api\bin\Debug\net5.0\MediatR.dll
 C:\Users\Tudor\proiect DAW\proiect DAW\api\bin\Debug\net5.0\MediatR.Contracts.dll
 C:\Users\Tudor\proiect DAW\proiect DAW\api\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Tudor\proiect DAW\proiect DAW\api\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\Tudor\proiect DAW\proiect DAW\api\obj\Debug\net5.0\api.csproj.CopyComplete
 C:\Users\Tudor\proiect DAW\proiect DAW\api\bin\Debug\net5.0\BCrypt.Net-Next.dll
