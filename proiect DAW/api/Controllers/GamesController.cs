@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using App.users;
+using App.gamez;
 using Domain;
 using MediatR;
 
@@ -19,12 +19,12 @@ namespace api.Controllers
             _mediator = mediator;
         }
         [HttpGet]
-        public async Task<ActionResult<List<user>>> List()
+        public async Task<ActionResult<List<games>>> List()
         {
             return await _mediator.Send(new list.Query());
         }
         [HttpGet("{id}")]
-        public async Task<ActionResult<user>> search(Guid id)
+        public async Task<ActionResult<games>> search(Guid id)
         {
             return await _mediator.Send(new search.Query{Id=id});
 

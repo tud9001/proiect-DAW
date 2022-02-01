@@ -5,7 +5,7 @@ using Domain;
 using MediatR;
 using Persistance;
 
-namespace App.games
+namespace App.gamez
 {
     public class create
     {
@@ -14,9 +14,9 @@ namespace App.games
             public Guid Id{get; set;}
             public string Name{get; set; }
 
-            public string Tip{get;set;}
-            public float Balance{get;set;}
-            public string Parola{get; set;}
+            public float Cost{get;set;}
+            public int Idprod{get;set;}
+            
         }
         public class Handler : IRequestHandler<Command>
         {
@@ -28,14 +28,14 @@ namespace App.games
 
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
-                var usernou=new user(request.Parola){
+                var jocnou=new games{
                     Id=request.Id,
                     Name=request.Name,
-                    Tip=request.Tip,
-                    Balance=request.Balance
+                    Cost=request.Cost,
+                    Idprod=request.Idprod
                     
                 };
-                _context.User.Add(usernou);
+                _context.Games.Add(jocnou);
                 var success = await _context.SaveChangesAsync() > 0;
                 
                 if(success)return Unit.Value;
