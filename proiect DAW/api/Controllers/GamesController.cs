@@ -34,5 +34,11 @@ namespace api.Controllers
         {
             return await _mediator.Send(command);
         }
+        [HttpPut("{id}")]
+        public async Task<ActionResult<Unit>> edit(Guid id, edit.Command command)
+        {
+            command.Id=id;
+            return await _mediator.Send(command);
+        }
     }
 }
