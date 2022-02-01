@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1hf5ej9m4jDbSjloLPB6cj4PDvNKR8E6KVAIkwrR5XbM7/tCSQ3Mwl28kDGuov/XVF3QOqLRyNPUrnE9L9DnPw==",
+  "dgSpecHash": "XddJ1scjMCGbe+dr1Kx1aE3Qw0R5lBDJ1USKAuKu1jpr2cja/6NJfXXQH/vywNiIj9RyHNQ2YkQDkvXarty9vA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tudor\\proiect DAW\\proiect DAW\\Persistance\\Persistance.csproj",
+  "projectFilePath": "c:\\Users\\Tudor\\proiect DAW\\proiect DAW\\Persistance\\Persistance.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tudor\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.13\\microsoft.data.sqlite.core.5.0.13.nupkg.sha512",
     "C:\\Users\\Tudor\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\3.1.6\\microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",

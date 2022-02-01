@@ -959,11 +959,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tudor\\proiect DAW\\proiect DAW\\Persistance\\Persistance.csproj",
+      "projectUniqueName": "c:\\Users\\Tudor\\proiect DAW\\proiect DAW\\Persistance\\Persistance.csproj",
       "projectName": "Persistance",
-      "projectPath": "C:\\Users\\Tudor\\proiect DAW\\proiect DAW\\Persistance\\Persistance.csproj",
+      "projectPath": "c:\\Users\\Tudor\\proiect DAW\\proiect DAW\\Persistance\\Persistance.csproj",
       "packagesPath": "C:\\Users\\Tudor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tudor\\proiect DAW\\proiect DAW\\Persistance\\obj\\",
+      "outputPath": "c:\\Users\\Tudor\\proiect DAW\\proiect DAW\\Persistance\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Tudor\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -980,8 +980,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Tudor\\proiect DAW\\proiect DAW\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Tudor\\proiect DAW\\proiect DAW\\Domain\\Domain.csproj"
+            "c:\\Users\\Tudor\\proiect DAW\\proiect DAW\\Domain\\Domain.csproj": {
+              "projectPath": "c:\\Users\\Tudor\\proiect DAW\\proiect DAW\\Domain\\Domain.csproj"
             }
           }
         }

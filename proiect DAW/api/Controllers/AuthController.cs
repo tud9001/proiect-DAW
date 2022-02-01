@@ -1,10 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
-using WebApi.Authorization;
-using WebApi.Entities;
-using WebApi.Models.Users;
-using WebApi.Services;
+using api.autorizare;
+using Domain;
+using api.Models.Users;
+using api.Services;
+using System;
 
-namespace WebApi.Controllers
+namespace api.Controllers
 {
     [Authorize]
     [ApiController]
@@ -26,7 +27,7 @@ namespace WebApi.Controllers
             return Ok(response);
         }
 
-        [Authorize(Role.Admin)]
+        [Authorize(role.Admin)]
         [HttpGet]
         public IActionResult GetAll()
         {
@@ -34,12 +35,12 @@ namespace WebApi.Controllers
             return Ok(users);
         }
 
-        [HttpGet("{id:int}")]
-        public IActionResult GetById(int id)
+        [HttpGet("{id:guid}")]
+        public IActionResult GetById(Guid id)
         {
             // only admins can access other user records
-            var currentUser = (User)HttpContext.Items["User"];
-            if (id != currentUser.Id && currentUser.Role != Role.Admin)
+            var currentUser = (user)HttpContext.Items["User"];
+            if (id != currentUser.Id && currentUser.role != role.Admin)
                 return Unauthorized(new { message = "Unauthorized" });
 
             var user =  _userService.GetById(id);

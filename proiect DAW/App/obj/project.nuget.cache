@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g7G1dJ6+WMAVosZz8/wrFWilFnluQ8+PXzH++k3ghYHn9aZAHljsn4d5Azl7ZFzFKNHhnTAEnRNE1IWcZiz0zg==",
+  "dgSpecHash": "CAwuL8LcP4h3Ma1S5jjSsACcWbdBJPEBNzTZN+AKhZdlSoAUfLKVKKZ43RcwYvm3x/esamP8+h+pdvyDon9JZw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tudor\\proiect DAW\\proiect DAW\\app\\App.csproj",
+  "projectFilePath": "c:\\Users\\Tudor\\proiect DAW\\proiect DAW\\App\\App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tudor\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\Tudor\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",

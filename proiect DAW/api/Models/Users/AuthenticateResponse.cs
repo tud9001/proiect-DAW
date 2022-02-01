@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Domain;
 
-namespace WebApi.Models.Users
+namespace api.Models.Users
 {
     public class AuthenticateResponse
     {

@@ -7,7 +7,7 @@ using System.Linq;
 using Domain;
 
 
-namespace WebApi.Authorization
+namespace api.autorizare
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     public class AuthorizeAttribute : Attribute, IAuthorizationFilter

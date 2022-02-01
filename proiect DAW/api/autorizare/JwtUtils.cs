@@ -5,15 +5,15 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using WebApi.Entities;
-using WebApi.Helpers;
+using Domain;
+using api.Helpers;
 
-namespace WebApi.Authorization
+namespace api.autorizare
 {
     public interface IJwtUtils
     {
-        public string GenerateJwtToken(User user);
-        public int? ValidateJwtToken(string token);
+        public string GenerateJwtToken(user user);
+        public Guid? ValidateJwtToken(string token);
     }
 
     public class JwtUtils : IJwtUtils
@@ -25,7 +25,7 @@ namespace WebApi.Authorization
             _appSettings = appSettings.Value;
         }
 
-        public string GenerateJwtToken(User user)
+        public string GenerateJwtToken(user user)
         {
             // generate token that is valid for 7 days
             var tokenHandler = new JwtSecurityTokenHandler();
@@ -40,7 +40,7 @@ namespace WebApi.Authorization
             return tokenHandler.WriteToken(token);
         }
 
-        public int? ValidateJwtToken(string token)
+        public Guid? ValidateJwtToken(string token)
         {
             if (token == null)
                 return null;
@@ -60,7 +60,7 @@ namespace WebApi.Authorization
                 }, out SecurityToken validatedToken);
 
                 var jwtToken = (JwtSecurityToken)validatedToken;
-                var userId = int.Parse(jwtToken.Claims.First(x => x.Type == "id").Value);
+                var userId = Guid.Parse(jwtToken.Claims.First(x => x.Type == "id").Value);
 
                 // return user id from JWT token if validation successful
                 return userId;
