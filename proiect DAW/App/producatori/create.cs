@@ -25,14 +25,11 @@ namespace App.producatori
 
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
-                var jocnou=new games{
+                var prodnou=new producator{
                     Id=request.Id,
-                    Name=request.Name,
-                    Cost=request.Cost,
-                    Idprod=request.Idprod
-                    
+                    Name=request.Name
                 };
-                _context.Games.Add(jocnou);
+                _context.Producator.Add(prodnou);
                 var success = await _context.SaveChangesAsync() > 0;
                 
                 if(success)return Unit.Value;
