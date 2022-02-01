@@ -25,13 +25,13 @@ namespace api.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<user>>> Get()
         {
-            var values = await _context.Values.ToListAsync();
+            var values = await _context.User.ToListAsync();
             return Ok(values);
         }
         [HttpGet("{id}")]
         public async Task<ActionResult<user>> Get(int id)
         {
-            var valoare = await _context.Values.FindAsync(id);
+            var valoare = await _context.User.FindAsync(id);
             return Ok(valoare);
         }
         /*public IEnumerable<Values> Get()

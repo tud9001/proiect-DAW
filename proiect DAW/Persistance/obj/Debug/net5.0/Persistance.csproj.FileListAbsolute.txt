@@ -12,4 +12,3 @@ C:\Users\Tudor\proiect DAW\proiect DAW\Persistance\obj\Debug\net5.0\Persistance.
 C:\Users\Tudor\proiect DAW\proiect DAW\Persistance\obj\Debug\net5.0\Persistance.dll
 C:\Users\Tudor\proiect DAW\proiect DAW\Persistance\obj\Debug\net5.0\ref\Persistance.dll
 C:\Users\Tudor\proiect DAW\proiect DAW\Persistance\obj\Debug\net5.0\Persistance.pdb
-C:\Users\Tudor\proiect DAW\proiect DAW\Persistance\obj\Debug\net5.0\Persistance.csproj.CopyComplete

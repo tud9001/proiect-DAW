@@ -16,7 +16,7 @@ namespace Persistance
 
         protected override void OnModelCreating(ModelBuilder builder){
             builder.Entity<achizitii>(x => x.HasKey(ug => 
-                new {ug.Iduser, ug.Idjoc}));
+                new {ug.Iduser, ug.Idgames}));
             builder.Entity<achizitii>()
             .HasOne(u => u.user)
             .WithMany(g => g.achizitie)
@@ -24,27 +24,9 @@ namespace Persistance
             builder.Entity<achizitii>()
             .HasOne(g => g.games)
             .WithMany(u => u.achizitie)
-            .HasForeignKey(g=> g.Idjoc);
-            builder.Entity<user>()
-            .HasData(
-                new user {Id = 1, Name = "tud", Tip = "user", Balance = 10, Idlogin = 1},
-                
-                new user {Id = 2, Name = "jeff", Tip = "user", Balance = 20, Idlogin = 2},
-                
-                new user {Id = 3, Name = "chef", Tip = "user", Balance = 0, Idlogin = 3}
-            );
-            builder.Entity<games>()
-            .HasData(
-                new games {Id = 1, Name = "The Binding of Isaac",  Cost = 15, Idprod = 3},
-                
-                new games {Id = 2, Name = "Inscryption",  Cost = 20, Idprod = 1},
-
-                new games {Id = 3, Name = "Genshin Impact",  Cost = 0, Idprod = 2},
-
-                new games {Id = 4, Name = "The End is Nigh",  Cost = 0, Idprod = 3},
-
-                new games {Id = 5, Name = "Pony Island",  Cost = 4, Idprod = 1}
-            );
+            .HasForeignKey(g=> g.Idgames);
+            
+            
             builder.Entity<producator>()
             .HasData(
                 new producator {Id = 1, Name = "Daniel Mullins"},
