@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace Domain
 {
@@ -22,6 +23,9 @@ namespace Domain
         public string Tip{get;set;}
         public float Balance{get;set;}
         public int Idlogin{get; set;}
+        public role role{get; set;}
         public virtual ICollection<achizitii> achizitie { get; set; }
+        [JsonIgnore]
+        public string PasswordHash { get; set; }
     }
 }

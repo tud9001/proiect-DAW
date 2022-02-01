@@ -7,12 +7,12 @@ namespace Domain
         public login()
         {
         }
-        public login(string parola)
+        public login(string Email)
         {
-            Parola=parola;
+            email=Email;
         }
 
         public int Id{get; set;}
-        public string Parola{get; set;}
+        public string email{get; set;}
     }
 }

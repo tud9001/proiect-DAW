@@ -38,11 +38,11 @@ namespace Persistance
             {
                 var parole = new List<login>
                 {
-                    new login {Id =1, Parola = "mare"},
+                    new login {Id =1, email = "jeffboi@gmail.com"},
                 
-                    new login {Id =2,Parola = "schema"},
+                    new login {Id =2,email = "hehexd@yahoo.com"},
                 
-                    new login {Id =3,Parola = "aicea"}
+                    new login {Id =3,email = "lmao@hotmail.com"}
                 };
                 context.Login.AddRange(parole);
                 context.SaveChanges();
