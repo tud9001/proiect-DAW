@@ -4,12 +4,15 @@ namespace Domain
 {
     public class login
     {
+        public login()
+        {
+        }
         public login(string parola)
         {
             Parola=parola;
         }
 
-        public Guid Id{get; set;}
+        public int Id{get; set;}
         public string Parola{get; set;}
     }
 }

@@ -27,14 +27,7 @@ namespace Persistance
             .HasForeignKey(g=> g.Idgames);
             
             
-            builder.Entity<producator>()
-            .HasData(
-                new producator {Id = 1, Name = "Daniel Mullins"},
-                
-                new producator {Id = 2, Name = "Mihoyo"},
-                
-                new producator {Id = 3, Name = "Edmund McMillen"}
-            );
+            
             
             
         }

@@ -5,6 +5,11 @@ namespace Domain
 {
     public class user
     {
+        public user()
+        {
+            var loginuser=new login("");
+            Idlogin=loginuser.Id;
+        }
         public user(string parola)
         {
             var loginuser=new login(parola);
@@ -16,7 +21,7 @@ namespace Domain
 
         public string Tip{get;set;}
         public float Balance{get;set;}
-        public Guid Idlogin{get; set;}
+        public int Idlogin{get; set;}
         public virtual ICollection<achizitii> achizitie { get; set; }
     }
 }

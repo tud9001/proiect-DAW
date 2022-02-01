@@ -9,8 +9,8 @@ using Persistance;
 namespace Persistance.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220201022733_NewCreate")]
-    partial class NewCreate
+    [Migration("20220201174119_NewStart")]
+    partial class NewStart
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -42,8 +42,8 @@ namespace Persistance.Migrations
                     b.Property<float>("Cost")
                         .HasColumnType("REAL");
 
-                    b.Property<int>("Idprod")
-                        .HasColumnType("INTEGER");
+                    b.Property<Guid>("Idprod")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
                         .HasColumnType("TEXT");
@@ -55,9 +55,9 @@ namespace Persistance.Migrations
 
             modelBuilder.Entity("Domain.login", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Parola")
                         .HasColumnType("TEXT");
@@ -65,30 +65,13 @@ namespace Persistance.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Login");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Parola = "mare"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Parola = "schema"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Parola = "aicea"
-                        });
                 });
 
             modelBuilder.Entity("Domain.producator", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
                         .HasColumnType("TEXT");
@@ -96,23 +79,6 @@ namespace Persistance.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Producator");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Name = "Daniel Mullins"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Name = "Mihoyo"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Name = "Edmund McMillen"
-                        });
                 });
 
             modelBuilder.Entity("Domain.user", b =>
@@ -124,8 +90,8 @@ namespace Persistance.Migrations
                     b.Property<float>("Balance")
                         .HasColumnType("REAL");
 
-                    b.Property<int>("Idlogin")
-                        .HasColumnType("INTEGER");
+                    b.Property<Guid>("Idlogin")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
                         .HasColumnType("TEXT");

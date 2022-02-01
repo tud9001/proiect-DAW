@@ -3,13 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Persistance.Migrations
 {
-    public partial class NewCreate : Migration
+    public partial class NewStart : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "Values");
-
             migrationBuilder.CreateTable(
                 name: "Games",
                 columns: table => new
@@ -17,7 +14,7 @@ namespace Persistance.Migrations
                     Id = table.Column<Guid>(type: "TEXT", nullable: false),
                     Name = table.Column<string>(type: "TEXT", nullable: true),
                     Cost = table.Column<float>(type: "REAL", nullable: false),
-                    Idprod = table.Column<int>(type: "INTEGER", nullable: false)
+                    Idprod = table.Column<Guid>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -28,8 +25,7 @@ namespace Persistance.Migrations
                 name: "Login",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
+                    Id = table.Column<Guid>(type: "TEXT", nullable: false),
                     Parola = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
@@ -41,8 +37,7 @@ namespace Persistance.Migrations
                 name: "Producator",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
+                    Id = table.Column<Guid>(type: "TEXT", nullable: false),
                     Name = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
@@ -58,7 +53,7 @@ namespace Persistance.Migrations
                     Name = table.Column<string>(type: "TEXT", nullable: true),
                     Tip = table.Column<string>(type: "TEXT", nullable: true),
                     Balance = table.Column<float>(type: "REAL", nullable: false),
-                    Idlogin = table.Column<int>(type: "INTEGER", nullable: false)
+                    Idlogin = table.Column<Guid>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -89,36 +84,6 @@ namespace Persistance.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.InsertData(
-                table: "Login",
-                columns: new[] { "Id", "Parola" },
-                values: new object[] { 1, "mare" });
-
-            migrationBuilder.InsertData(
-                table: "Login",
-                columns: new[] { "Id", "Parola" },
-                values: new object[] { 2, "schema" });
-
-            migrationBuilder.InsertData(
-                table: "Login",
-                columns: new[] { "Id", "Parola" },
-                values: new object[] { 3, "aicea" });
-
-            migrationBuilder.InsertData(
-                table: "Producator",
-                columns: new[] { "Id", "Name" },
-                values: new object[] { 1, "Daniel Mullins" });
-
-            migrationBuilder.InsertData(
-                table: "Producator",
-                columns: new[] { "Id", "Name" },
-                values: new object[] { 2, "Mihoyo" });
-
-            migrationBuilder.InsertData(
-                table: "Producator",
-                columns: new[] { "Id", "Name" },
-                values: new object[] { 3, "Edmund McMillen" });
-
             migrationBuilder.CreateIndex(
                 name: "IX_Achizitii_Idgames",
                 table: "Achizitii",
@@ -141,34 +106,6 @@ namespace Persistance.Migrations
 
             migrationBuilder.DropTable(
                 name: "User");
-
-            migrationBuilder.CreateTable(
-                name: "Values",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    Name = table.Column<string>(type: "TEXT", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Values", x => x.Id);
-                });
-
-            migrationBuilder.InsertData(
-                table: "Values",
-                columns: new[] { "Id", "Name" },
-                values: new object[] { 1, "mare" });
-
-            migrationBuilder.InsertData(
-                table: "Values",
-                columns: new[] { "Id", "Name" },
-                values: new object[] { 2, "schema" });
-
-            migrationBuilder.InsertData(
-                table: "Values",
-                columns: new[] { "Id", "Name" },
-                values: new object[] { 3, "aicea" });
         }
     }
 }
