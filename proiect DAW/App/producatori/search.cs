@@ -9,11 +9,11 @@ namespace App.producatori
 {
     public class search
     {
-        public class Query : IRequest<user>
+        public class Query : IRequest<producator>
         {
             public Guid Id {get;set;}
         }
-        public class Handler : IRequestHandler<Query, user>
+        public class Handler : IRequestHandler<Query, producator>
         {
             private readonly DataContext _context;
             public Handler(DataContext context)
@@ -21,10 +21,10 @@ namespace App.producatori
                 _context=context;
             }
             
-            public async Task<user> Handle(Query request, CancellationToken cancellationToken)
+            public async Task<producator> Handle(Query request, CancellationToken cancellationToken)
             {
-                var userboi = await _context.User.FindAsync(request.Id);
-                return userboi;
+                var prod = await _context.Producator.FindAsync(request.Id);
+                return prod;
             }
         }
         
