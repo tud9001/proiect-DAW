@@ -13,6 +13,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Persistance;
+using MediatR;
+using App.users;
 
 namespace api
 {
@@ -38,6 +40,7 @@ namespace api
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "api", Version = "v1" });
             });
+            services.AddMediatR(typeof(list).Assembly);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
