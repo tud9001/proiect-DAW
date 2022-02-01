@@ -2,7 +2,7 @@ namespace Domain
 {
     public class login
     {
-        public int Idlogin{get; set;}
-        public int parola{get; set;}
+        public int Id{get; set;}
+        public string Parola{get; set;}
     }
 }

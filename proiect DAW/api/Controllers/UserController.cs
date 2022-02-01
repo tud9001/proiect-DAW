@@ -14,12 +14,6 @@ namespace api.Controllers
     [Route("[controller]")]
     public class ValuesController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
-        
         private readonly DataContext _context;
 
         public ValuesController(DataContext context)
@@ -29,13 +23,13 @@ namespace api.Controllers
 
         
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<value>>> Get()
+        public async Task<ActionResult<IEnumerable<user>>> Get()
         {
             var values = await _context.Values.ToListAsync();
             return Ok(values);
         }
         [HttpGet("{id}")]
-        public async Task<ActionResult<value>> Get(int id)
+        public async Task<ActionResult<user>> Get(int id)
         {
             var valoare = await _context.Values.FindAsync(id);
             return Ok(valoare);
