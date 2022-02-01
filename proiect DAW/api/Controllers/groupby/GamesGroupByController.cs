@@ -25,7 +25,7 @@ namespace api.Controllers.groupBy
         public IActionResult GamesByProducator()
         {
             
-            var gamezz = _context.Games.GroupBy(prod => prod.Id, prod => prod.Name);
+            var gamezz = _context.Games.GroupBy(gamezz => gamezz.Idprod, gamezz => gamezz.Name);
 
             return Ok(gamezz);
         }
