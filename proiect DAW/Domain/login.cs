@@ -1,8 +1,15 @@
+using System;
+
 namespace Domain
 {
     public class login
     {
-        public int Id{get; set;}
+        public login(string parola)
+        {
+            Parola=parola;
+        }
+
+        public Guid Id{get; set;}
         public string Parola{get; set;}
     }
 }

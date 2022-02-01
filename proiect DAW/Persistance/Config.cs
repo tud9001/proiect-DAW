@@ -12,11 +12,11 @@ namespace Persistance
             {
                 var useri = new List<user>
                 {
-                    new user {Name = "tud", Tip = "user", Balance = 10, Idlogin = 1},
+                    new user("mare") {Name = "tud", Tip = "user", Balance = 10},
                 
-                    new user {Name = "jeff", Tip = "user", Balance = 20, Idlogin = 2},
+                    new user("schema") {Name = "jeff", Tip = "user", Balance = 20},
                 
-                    new user {Name = "chef", Tip = "user", Balance = 0, Idlogin = 3}
+                    new user("aicea") {Name = "chef", Tip = "user", Balance = 0}
                 };
                 context.User.AddRange(useri);
                 context.SaveChanges();

@@ -35,14 +35,7 @@ namespace Persistance
                 
                 new producator {Id = 3, Name = "Edmund McMillen"}
             );
-            builder.Entity<login>()
-            .HasData(
-                new login {Id = 1, Parola = "mare"},
-                
-                new login {Id = 2, Parola = "schema"},
-                
-                new login {Id = 3, Parola = "aicea"}
-            );
+            
             
         }
     }

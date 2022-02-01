@@ -29,6 +29,10 @@ namespace api.Controllers
             return await _mediator.Send(new search.Query{Id=id});
 
         }
-
+        [HttpPost]
+        public async Task<ActionResult<Unit>> create(create.Command command)
+        {
+            return await _mediator.Send(command);
+        }
     }
 }
