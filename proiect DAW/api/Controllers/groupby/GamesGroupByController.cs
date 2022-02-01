@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 using Persistance;
 
 
-namespace api.Controllers
+namespace api.Controllers.groupBy
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class GamesGroupByController : ControllerBase
     {
@@ -15,12 +15,13 @@ namespace api.Controllers
         {
             _context = context;
         }
-        [HttpGet]
+        [HttpGet("{id:int}")]
         public IActionResult GetId(int id)
         {
             var prod = _context.Producator.Where(prod => prod.Id == id);
             return Ok(prod);
         }
+        [HttpGet]
         public IActionResult GamesByProducator()
         {
             

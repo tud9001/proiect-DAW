@@ -65,3 +65,8 @@ C:\Users\Tudor\proiect DAW\proiect DAW\api\bin\Debug\net5.0\MediatR.Contracts.dl
 C:\Users\Tudor\proiect DAW\proiect DAW\api\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Tudor\proiect DAW\proiect DAW\api\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\Tudor\proiect DAW\proiect DAW\api\bin\Debug\net5.0\BCrypt.Net-Next.dll
+C:\Users\Tudor\proiect DAW\proiect DAW\api\bin\Debug\net5.0\IdentityModel.dll
+C:\Users\Tudor\proiect DAW\proiect DAW\api\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Tudor\proiect DAW\proiect DAW\api\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Tudor\proiect DAW\proiect DAW\api\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Tudor\proiect DAW\proiect DAW\api\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll

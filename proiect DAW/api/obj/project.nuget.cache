@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9HkwpZS6Oc0Ikxh83isXi5ksi6p95hLT+MaTdmp3CN1ymvQUk1WOUJiUWr/B8bBtIHsaOYzlFrcy/lMPxX/OyA==",
+  "dgSpecHash": "5Dl4HNA3PvOfZrfJUK5+1Lnmo/PerqJcnth90hHLgQlok+SNpeI616A1ES6dpXOeJNTE9o50ipVbsY99YF5ScQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Tudor\\proiect DAW\\proiect DAW\\api\\api.csproj",
+  "projectFilePath": "C:\\Users\\Tudor\\proiect DAW\\proiect DAW\\api\\api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tudor\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
     "C:\\Users\\Tudor\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
