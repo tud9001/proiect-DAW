@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using App.users;
 using Domain;
@@ -22,5 +23,12 @@ namespace api.Controllers
         {
             return await _mediator.Send(new list.Query());
         }
+        [HttpGet("{id}")]
+        public async Task<ActionResult<user>> search(Guid id)
+        {
+            return await _mediator.Send(new search.Query{Id=id});
+
+        }
+
     }
 }
